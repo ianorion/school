@@ -1,1 +1,7 @@
 navbar: soft black background, soft grey nav-items, on hover => white
+
+
+
+background: dark gray
+intro: soft gray but white on hover
+start-intro: same as intro

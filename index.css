@@ -5,21 +5,58 @@ body {
 #page-header {
   padding: 0;
   margin: 0;
-  background-color: #191919;
-  height: 60vh;
+  background-color: #1a1a1a;
+  height: 65%;
+  width: 100%;
+  position: absolute;
+}
+#start-introduction:hover {
+  animation-name: changeColor;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 #start-introduction {
   padding: 0;
   margin: 0;
+  margin-top: 15vh;
   font-size: 3em;
   text-align: center;
-  color: white;
+  font-family: arial;
+  color: #262626;
+  cursor: default;
+  animation-name: reverseColor;
+  animation-duration: 0.5s;
+}
+#introduction:hover {
+  animation-name: changeColor;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 #introduction {
   padding: 0;
   margin: 0;
-  margin-top: 20vh;
-  font-size: 6em;
+  margin-top: 3vh;
+  font-size: 7em;
   text-align: center;
-  color: white;
+  color: #262626;
+  font-family: arial;
+  cursor: default;
+  animation-name: reverseColor;
+  animation-duration: 0.5s;
+}
+@keyframes changeColor {
+  from {
+    color: #262626;
+  }
+  to {
+    color: white;
+  }
+}
+@keyframes reverseColor {
+  from {
+    color: white;
+  }
+  to {
+    color: #262626;
+  }
 }
